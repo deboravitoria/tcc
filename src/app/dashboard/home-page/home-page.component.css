@@ -1,3 +1,17 @@
-img {
-  opacity: 1;
+@import url(//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print);
+
+@font-face {
+  font-family: "Segoe Print";
+  src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot");
+  src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print") format("svg");
+}
+
+h1 {
+  font-size: 7em;
+  font-family: "Segoe Print";
+  text-shadow: 0.04em 0.04em #333
+}
+h4 {
+  font-family: "Segoe Print";
+  text-shadow: 0.08em 0.08em #333
 }

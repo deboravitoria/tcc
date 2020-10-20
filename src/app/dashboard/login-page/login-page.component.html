@@ -1,1 +1,74 @@
-<p>login-page works!</p>
+<nav class="navbar navbar-expand navbar">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="assets/cowboygenius.png" alt="" width="65" height="65" alpha="0.5" id="logo">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <p class="nav-link" href="#">Quem somos <span class="sr-only">(current)</span></p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link" href="#">Parcerias</p>
+        </li>
+      </ul>
+    </div>
+</nav>
+  
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Login</a>
+      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Cadastro</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              <h3>Login</h3>
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Usuário</b></label>
+              <input type="text" placeholder="E-mail" name="uname" required>
+          
+              <label for="psw"><b>Senha</b></label>
+              <input type="password" placeholder="Senha" name="psw" required>
+          
+              <button type="submit">Entrar</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Lembrar senha
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancelar</button>
+              <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+            </div>
+        </form>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              <h3>Cadastro</h3>
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Usuário</b></label>
+              <input type="text" placeholder="Insira seu e-mail" name="uname" required>
+          
+              <label for="psw"><b>Senha</b></label>
+              <input type="password" placeholder="Senha" name="psw" required>
+
+              <label for="psw"><b>Confirme sua senha</b></label>
+              <input type="password" placeholder="Digite a senha novamente" name="psw" required>
+          
+              <button type="submit">Entrar</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Lembrar senha
+              </label>
+            </div>
+          
+        </form>
+    </div>
+  </div>
+
