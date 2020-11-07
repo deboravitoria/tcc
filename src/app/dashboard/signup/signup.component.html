@@ -5,14 +5,16 @@
 />
 
 <nav class="navbar navbar-expand navbar">
-  <img
-    src="assets/cowboygenius.png"
-    alt=""
-    width="65"
-    height="65"
-    alpha="0.5"
-    id="logo"
-  />
+  <a routerLink="/login">
+    <img
+      src="assets/cowboygenius.png"
+      alt=""
+      width="65"
+      height="65"
+      alpha="0.5"
+      id="logo"
+    />
+  </a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -23,31 +25,34 @@
         <a class="btn btn-light" routerLink="/partners">Parcerias</a>
       </li>
     </ul>
-    <div class="form-inline my-2 my-lg-0">
-      <button type="button" class="btn btn-primary" routerLink="/signup">
-        Cadastre-se
-      </button>
-    </div>
   </div>
 </nav>
 
 <div class="imgcontainer">
-  <h3>Login</h3>
+  <h3>Cadastro</h3>
 </div>
 
 <div class="container">
   <label for="uname"><b>Usuário</b></label>
-  <input type="text" placeholder="E-mail" name="uname" required />
+  <input type="text" placeholder="Insira seu e-mail" name="uname" required />
+
+  <label for="uname"><b>E-mail</b></label>
+  <input type="text" placeholder="Insira seu e-mail" name="uname" required />
 
   <label for="psw"><b>Senha</b></label>
   <input type="password" placeholder="Senha" name="psw" required />
 
-  <button routerLink="/home">Entrar</button>
-  <label>
-    <input type="checkbox" checked="checked" name="remember" /> Lembrar senha
-  </label>
-</div>
+  <label for="psw"><b>Confirme sua senha</b></label>
+  <input
+    type="password"
+    placeholder="Digite a senha novamente"
+    name="psw"
+    required
+  />
 
-<div class="container" style="background-color: #f1f1f1">
-  <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
+  <label>
+    <input type="checkbox" checked="checked" name="studant" /> Sou estudante
+  </label>
+
+  <button type="submit" routerLink="/home">Registrar-me</button>
 </div>

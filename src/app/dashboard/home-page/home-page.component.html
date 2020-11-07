@@ -1,27 +1,42 @@
-
-<link href="//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print" rel="stylesheet" type="text/css"/>
+<link
+  href="//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print"
+  rel="stylesheet"
+  type="text/css"
+/>
 
 <nav class="navbar navbar-expand navbar">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <img src="assets/cowboygenius.png" alt="" width="65" height="65" alpha="0.5" id="logo">
-  </a>
+  <img
+    src="assets/cowboygenius.png"
+    alt=""
+    width="65"
+    height="65"
+    alpha="0.5"
+    id="logo"
+  />
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <p class="nav-link" href="#">Quem somos <span class="sr-only">(current)</span></p>
+      <li class="nav-item">
+        <button type="button" class="btn btn-light" routerLink="/cowboy-genius">
+          Quem somos
+        </button>
       </li>
       <li class="nav-item">
-        <p class="nav-link" href="#">Parcerias</p>
+        <button type="button" class="btn btn-light" routerLink="/partners">
+          Parcerias
+        </button>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button type="button" class="btn btn-light">Registrar-se</button>
-      <button type="button" class="btn btn-dark">Entrar</button>
+      <button type="button" class="btn btn-primary" routerLink="/create-class">
+        Criar questionário
+      </button>
+      <button type="button" class="btn btn-light" routerLink="/login">
+        Sair
+      </button>
     </form>
   </div>
 </nav>
-
 
 <div id="home" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -32,7 +47,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="container-sm">
-        <img src="assets/primeira.png" class="d-block w-100" alt="..." >
+        <img src="assets/primeira.png" class="d-block w-100" alt="first" />
         <div class="carousel-caption d-none d-md-block">
           <h1>Cowboy Genius</h1>
           <h4>Divirta-se enquanto revisa o conteúdo para sua prova.</h4>
@@ -40,14 +55,14 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/segunda.jpeg" class="d-block w-100" alt="..." >
+      <img src="assets/segunda.jpeg" class="d-block w-100" alt="second" />
       <div class="carousel-caption d-none d-md-block">
         <h1>Cowboy Genius</h1>
         <h4>Auxilia a fixar conteúdos lecionados diariasmente aos alunos.</h4>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/terceira.jpeg" class="d-block w-100" alt="...">
+      <img src="assets/terceira.jpeg" class="d-block w-100" alt="third" />
       <div class="carousel-caption d-none d-md-block">
         <h1>Cowboy Genius</h1>
         <h4>Crie sua prórpia lista de exercícios.</h4>
