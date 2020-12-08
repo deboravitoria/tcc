@@ -21,19 +21,52 @@
   <h3>Questionário</h3>
 </div>
 
-<div class="container">
-  <label for="uname"><b>Usuário</b></label>
-  <input type="text" placeholder="E-mail" name="uname" required />
+<!--
 
-  <label for="psw"><b>Senha</b></label>
-  <input type="password" placeholder="Senha" name="psw" required />
+<form #addressForm="ngForm" class="container mt-3" (ngSubmit)="logValue()">
+  <section *ngFor="let question of questions; let i = index">
+    <label>Pergunta</label>
+    <input
+      type="text"
+      [(ngModel)]="questions.question"
+      name="question_{{ i }}"
+    />
+    <label>Alternativa 1</label>
+    <input
+      type="text"
+      [(ngModel)]="questions.answare1"
+      name="answare1_{{ i }}"
+    />
+    <label>Alternativa 2</label>
+    <input
+      type="text"
+      [(ngModel)]="questions.answare2"
+      name="answare2_{{ i }}"
+    />
+    <label>Alternativa 3</label>
+    <input
+      type="text"
+      [(ngModel)]="questions.answare3"
+      name="answare3_{{ i }}"
+    />
+    <label>Alternativa 4</label>
+    <input
+      type="text"
+      [(ngModel)]="questions.answare3"
+      name="answare4_{{ i }}"
+    />
+    <label>Alternativa </label>
 
-  <button routerLink="/home">Entrar</button>
-  <label>
-    <input type="checkbox" checked="checked" name="remember" /> Lembrar senha
-  </label>
-</div>
-
-<div class="container" style="background-color: #f1f1f1">
-  <span class="psw">Esqueceu sua <a href="#">senha?</a></span>
-</div>
+    <select
+      [(ngModel)]="questions.rightAnsware"
+      name="rightAnsware_{{ i }}"
+      placeholder="Resposta correta"
+    >
+      <option value="answare1_{{ i }}">answare1_{{ i }}</option>
+      <option value="answare2_{{ i }}">answare1_{{ i }}</option>
+      <option value="answare3_{{ i }}">answare1_{{ i }}</option>
+      <option value="answare4_{{ i }}">answare1_{{ i }}</option>
+    </select>
+  </section>
+</form>
+-->
